@@ -6,14 +6,14 @@ It provides a clean, responsive way to display all my social profiles in one pla
 
 You are free to fork this into your very own links website, with custom text, colors and images. It's simple and scaleable. Do reach out to me for adding support for more website icons.  
 
-![Screenshot of Links page](assets/screenshot.png)
+![Screenshot of Links page](../assets/links.png)
 
 ---
 
 ## 🌐 Website is Live
 
 **Website:** [https://nikoboinftb.github.io/links/](https://nikoboinftb.github.io/links/)  
-**Source Code:** [https://github.com/NikoboiNFTB/links](https://github.com/NikoboiNFTB/links)
+**Source Code:** [https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links)
 
 ---
 
@@ -40,14 +40,13 @@ No JavaScript, frameworks, or dependencies — just pure, fast web design.
 ## ⚙️ Setup and Customization
 
 1. **Fork the repository**
-   - Go to the [Links](https://github.com/NikoboiNFTB/links) repository.
+   - Go to the [Website](https://github.com/NikoboiNFTB/nikoboinftb.github.io/) repository.
    - Click the **Fork** button in the top right corner to create a copy of the repository under your own GitHub account.
+   - Go to the links folder.
 2. **Edit links**  
    - Open `index.html` and replace;
      - The Title.
      - The Favicon.
-     - The profile image
-       - To do this, replace `assets/clippy.jpg` file with another file.
      - The URLs inside the `<a>` tags with your own social links.
    - Also feel free to edit other parts of `index.html`, `assets` or `style.css`.
 3. **Deploy using GitHub Pages** (or self-host)  
