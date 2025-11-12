@@ -1,6 +1,6 @@
-let countdown = 5;
-const countdownEl =
-document.getElementById('countdown');
+const countdownEl = document.getElementById('countdown');
+
+let countdown = parseInt(countdownEl.textContent, 10);
 
 const interval = setInterval(() => {
     countdown -= 1;
