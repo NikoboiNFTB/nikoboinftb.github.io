@@ -145,3 +145,18 @@ decryptBtn.addEventListener("click", async (e) => {
     outputEl.textContent = err.message;
   }
 });
+
+const copyBtn = document.querySelector(".copy-output");
+
+copyBtn.addEventListener("click", () => {
+  const text = outputEl.textContent.trim();
+  if (!text) return;
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      copyBtn.textContent = "Copied!";
+      setTimeout(() => copyBtn.textContent = "Copy Output", 1000);
+    })
+    .catch(err => {
+      console.error("Copy failed:", err);
+    });
+});
