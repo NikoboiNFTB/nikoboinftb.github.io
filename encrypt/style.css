@@ -14,9 +14,10 @@ body {
   color: var(--text-color);
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column; /* stack container and notice vertically */
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* use min-height instead of height for better responsiveness */
   margin: 0;
   padding: calc(16px * var(--scale));
   text-align: center;
@@ -94,4 +95,20 @@ body {
   .buttons a {
     width: 100%;
   }
+}
+
+.notice {
+  font-size: calc(16px * var(--scale));
+  color: #ccc;
+  margin-top: calc(24px * var(--scale));
+  text-align: center;
+}
+
+.notice a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.notice a:hover {
+  text-decoration: underline;
 }
