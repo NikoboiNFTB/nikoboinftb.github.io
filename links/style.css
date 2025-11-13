@@ -17,10 +17,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh; /* Make body take full viewport height */
   margin: 0;
   padding: calc(16px * var(--scale));
   text-align: center;
   font-size: calc(16px * var(--scale));
+  box-sizing: border-box;
 }
 
 .link-div {
@@ -84,7 +86,7 @@ img.profile {
 
 .notice {
   font-size: calc(16px * var(--scale));
-  margin-top: calc(16px * var(--scale));
+  margin-top: calc(24px * var(--scale));
   color: #ccc;
 }
 
