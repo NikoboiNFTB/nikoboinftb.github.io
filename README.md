@@ -9,7 +9,7 @@ This repository contains several lightweight, open-source web tools. All tools a
 | Tool | Description | Live Demo | Source |
 |------|------------|-----------|--------|
 | **Links** | Simple site for easy access to all of my socials | [links](https://nikoboinftb.github.io/links) | [links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links) |
-| **Text Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [encrypt](https://nikoboinftb.github.io/encrypt) | [encrypt](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
+| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [encrypt](https://nikoboinftb.github.io/encrypt) | [encrypt](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
 | **Open Links** | Quickly open multiple URLs in new browser tabs. | [open-links](https://nikoboinftb.github.io/open-links) | [open-links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/open-links) |
 | **Video Player** | Embed multiple 111Movies video URLs at once and download them using Video DownloadHelper. | [video-player](https://nikoboinftb.github.io/video-player) | [video-player](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/video-player) |
 
