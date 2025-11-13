@@ -1,0 +1,97 @@
+:root {
+  --scale: 1.25;
+  --gap: calc(12px * var(--scale));
+  --primary-color: #3366cc;
+  --bg-color: #181818;
+  --text-color: #ffffff;
+  --input-bg: #222;
+  --input-border: #444;
+  --link-hover: #002F6C;
+}
+
+body {
+  background-color: #000;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: calc(16px * var(--scale));
+  text-align: center;
+}
+
+.container {
+  background-color: var(--bg-color);
+  padding: calc(32px * var(--scale));
+  border-radius: calc(12px * var(--scale));
+  box-shadow: 0 0 calc(16px * var(--scale)) rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  padding: calc(10px * var(--scale));
+  margin: calc(8px * var(--scale)) 0;
+  font-size: calc(16px * var(--scale));
+  border-radius: calc(6px * var(--scale));
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: calc(16px * var(--scale));
+  margin: calc(16px * var(--scale)) 0;
+}
+
+.buttons a {
+  padding: calc(10px * var(--scale)) calc(20px * var(--scale));
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: calc(6px * var(--scale));
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.buttons a:hover {
+  background-color: var(--link-hover);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.container output {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  padding: calc(10px * var(--scale));
+  margin-top: calc(8px * var(--scale));
+  background-color: #111;
+  border: 1px solid var(--input-border);
+  border-radius: calc(6px * var(--scale));
+  color: var(--text-color);
+  word-break: break-word;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: calc(16px * var(--scale));
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons a {
+    width: 100%;
+  }
+}
