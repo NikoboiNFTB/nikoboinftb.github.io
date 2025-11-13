@@ -72,7 +72,7 @@ body {
 }
 
 .buttons a {
-  padding: calc(10px * var(--scale)) calc(20px * var(--scale));
+  padding: 16px 24px;      // RIGHT HERE
   background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
