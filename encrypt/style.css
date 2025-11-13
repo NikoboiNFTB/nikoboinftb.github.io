@@ -9,10 +9,11 @@
   --link-hover: #002F6C;
 }
 
-html, body {
+html {
   margin: 0;
   padding: 0;
-  height: 100%; /* ensure the body fills the viewport */
+  height: 100%;
+  width: 100%;
   background-color: #000;
   color: var(--text-color);
   font-family: Arial, sans-serif;
@@ -21,7 +22,23 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 80%;
+  background-color: #000;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 .container {
