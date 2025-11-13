@@ -7,6 +7,6 @@ const interval = setInterval(() => {
     countdownEl.textContent = countdown;
     if (countdown <= 0) {
         clearInterval(interval);
-        window.location.href = "/links";
+        window.location.href = "/links/";
     }
 }, 1000);
