@@ -72,7 +72,7 @@ body {
 }
 
 .buttons a {
-  padding: 16px 24px;      // RIGHT HERE
+  padding: 16px 24px;
   background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
