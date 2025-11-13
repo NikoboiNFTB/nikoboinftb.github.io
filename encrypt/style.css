@@ -9,18 +9,19 @@
   --link-hover: #002F6C;
 }
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* ensure the body fills the viewport */
   background-color: #000;
   color: var(--text-color);
   font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column; /* stack container and notice vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* use min-height instead of height for better responsiveness */
-  margin: 0;
-  padding: calc(16px * var(--scale));
   text-align: center;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
   padding: calc(32px * var(--scale));
   border-radius: calc(12px * var(--scale));
   box-shadow: 0 0 calc(16px * var(--scale)) rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   box-sizing: border-box;
 }
@@ -110,5 +111,6 @@ body {
 }
 
 .notice a:hover {
+  color: var(--link-hover);
   text-decoration: underline;
 }
