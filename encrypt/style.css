@@ -1,5 +1,5 @@
 :root {
-  --scale: 1;
+  --scale: 1.5;
   --gap: calc(12px * var(--scale));
   --primary-color: #3366cc;
   --bg-color: #181818;
