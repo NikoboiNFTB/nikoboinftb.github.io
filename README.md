@@ -8,10 +8,10 @@ This repository contains several lightweight, open-source web tools. All tools a
 
 | Tool | Description | Live Demo | Source |
 |------|------------|-----------|--------|
-| **Links** | Simple site for easy access to all of my socials | [links](https://nikoboinftb.github.io/links) | [links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links) |
-| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [encrypt](https://nikoboinftb.github.io/encrypt) | [encrypt](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
-| **Open Links** | Quickly open multiple URLs in new browser tabs. | [open-links](https://nikoboinftb.github.io/open-links) | [open-links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/open-links) |
-| **Video Player** | Embed multiple 111Movies video URLs at once and download them using Video DownloadHelper. | [video-player](https://nikoboinftb.github.io/video-player) | [video-player](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/video-player) |
+| **Links** | Simple site for easy access to all of my socials | [links](https://nikoboi.dev/links) | [links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links) |
+| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [encrypt](https://nikoboi.dev/encrypt) | [encrypt](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
+| **Open Links** | Quickly open multiple URLs in new browser tabs. | [open-links](https://nikoboi.dev/open-links) | [open-links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/open-links) |
+| **Video Player** | Embed multiple 111Movies video URLs at once and download them using Video DownloadHelper. | [video-player](https://nikoboi.dev/video-player) | [video-player](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/video-player) |
 
 ---
 
@@ -28,7 +28,7 @@ A simple, free and open-source portal where all of my public social media accoun
 ### Usage
 
 1. **Open Live Version:**  
-   [https://nikoboinftb.github.io/links](https://nikoboinftb.github.io/links)  
+   [https://nikoboi.dev/links](https://nikoboi.dev/links)  
    Or Download & Run/Edit Locally:  
    The main HTML file is `/links/index.html`, and the main CSS file is `/links/style.css`.
 
@@ -50,7 +50,7 @@ A lightweight, free, and open-source web tool to encrypt and decrypt text quickl
 
 ### Usage
 
-Open Live Version: [https://nikoboinftb.github.io/encrypt/](https://nikoboinftb.github.io/encrypt/)  
+Open Live Version: [https://nikoboi.dev/encrypt/](https://nikoboi.dev/encrypt/)  
 or Download and Run locally (recommended)  
 1. Create a folder anywhere, open the terminal in it and run `git clone https://github.com/NikoboiNFTB/nikoboinftb.github.io`  
 2. Run `cd nikoboinftb.github.io/encrypt/`  
@@ -80,7 +80,7 @@ A lightweight tool for opening multiple URLs at once in new tabs. Useful for bul
 ### Usage
 
 1. **Open Live Version:**  
-   [https://nikoboinftb.github.io/open-links](https://nikoboinftb.github.io/open-links)  
+   [https://nikoboi.dev/open-links](https://nikoboi.dev/open-links)  
    Or Download & Run Locally:  
    Clone the repository and open `open-links/index.html`.  
    - Technically even better for privacy, since not even GitHub can track you anymore  
@@ -113,7 +113,7 @@ A web app that allows you to bulk add video players from 111Movies. Videos can t
 ### Usage
 
 1. **Open Live Version:**  
-   [https://nikoboinftb.github.io/video-player](https://nikoboinftb.github.io/video-player)  
+   [https://nikoboi.dev/video-player](https://nikoboi.dev/video-player)  
    Or Download & Run Locally:  
    Clone the repository and open `video-player/index.html` in Firefox.  
 
