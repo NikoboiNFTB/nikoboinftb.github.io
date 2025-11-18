@@ -156,7 +156,10 @@ nikoboinftb.github.io/
 │   └── style.css  
 │  
 ├── LICENSE  
-└── README.md  
+├── README.md  
+├── index.html  
+├── script.js  
+└── style.css  
 
 ---
 
