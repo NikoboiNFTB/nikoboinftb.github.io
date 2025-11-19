@@ -7,7 +7,7 @@
     --link-bg: #222;
     --link-hover: #002F6C;
     --icon-filter: invert(1) brightness(2);
-    --font-size-base: 16px;
+    --font-size-base: 32px;
     --gap: 8px;
     --black: #000000;
 }
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #000000;
     color: var(--text-color);
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -74,7 +74,7 @@ body {
     color: var(--text-color);
     font-weight: bold;
     border-radius: 18px;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .bingo-board {
@@ -96,7 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 4vw;
     user-select: none;
     box-sizing: border-box;
     padding: 0;
@@ -147,13 +147,13 @@ body {
 #resetBtn {
     padding: 12px 32px;
     background-color: var(--link-bg);
-    border: none;
-    border-radius: 8px;
+    border: 1px solid #333;
+    border-radius: 18px;
     color: var(--text-color);
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 #resetBtn:hover {
@@ -190,7 +190,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .main-container {
         padding: 16px;
         width: 100%;
@@ -198,8 +198,8 @@ body {
     }
 
     .headers {
-        grid-template-columns: repeat(5, 1fr);
-        margin-bottom: 8px;
+        gap: 4px;
+        margin-bottom: 4px;
     }
 
     .headers .b-header,
@@ -208,61 +208,36 @@ body {
     .headers .g-header,
     .headers .o-header {
         width: 100%;
-        font-size: 5vw;
-        margin: 4px 0;
-        padding: 8px 0;
+        font-size: 8vw;
+        border-radius: 4px;
+        width: 100%;
+        aspect-ratio: 1;
     }
 
     .bingo-board {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        gap: var(--gap);
+        gap: 4px;
         width: 100%;
         aspect-ratio: 1;
     }
 
     .bingo-board div {
-        font-size: 4vw;
-        /*padding: 8px;*/
-        border-radius: 12px;
+        font-size: 8vw;
+        border-radius: 4px;
     }
 
     #resetBtn {
-        padding: 10px 24px;
+        padding: 8px 20px;
         font-size: 16px;
         margin-top: 16px;
     }
     
     .free-space img.logo-img {
-    border-radius: 12px;
+        border-radius: 4px;
     }
     
-    #winMessage {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .headers .b-header,
-    .headers .i-header,
-    .headers .n-header,
-    .headers .g-header,
-    .headers .o-header {
-        font-size: 6vw;
-        padding: 6px 0;
-    }
-
-    .bingo-board div {
-        font-size: 8vw;
-    }
-
-    #resetBtn {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-
     #winMessage {
         font-size: 16px;
     }
