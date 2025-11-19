@@ -74,7 +74,7 @@ body {
     color: var(--text-color);
     font-weight: bold;
     border-radius: 18px;
-    font-size: 4vw;
+    font-size: 64px;
 }
 
 .bingo-board {
@@ -95,8 +95,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-size: 4vw;
+    font-size: 48px;
     user-select: none;
     box-sizing: border-box;
     padding: 0;
@@ -208,7 +207,7 @@ body {
     .headers .g-header,
     .headers .o-header {
         width: 100%;
-        font-size: 8vw;
+        font-size: 32px;
         border-radius: 4px;
         width: 100%;
         aspect-ratio: 1;
@@ -224,7 +223,7 @@ body {
     }
 
     .bingo-board div {
-        font-size: 8vw;
+        font-size: 24px;
         border-radius: 4px;
     }
 
@@ -233,11 +232,11 @@ body {
         font-size: 16px;
         margin-top: 16px;
     }
-    
+
     .free-space img.logo-img {
         border-radius: 4px;
     }
-    
+
     #winMessage {
         font-size: 16px;
     }
