@@ -89,6 +89,12 @@ img.modrinth {
   vertical-align: middle;
 }
 
+img.finland {
+  width: calc(28px * var(--scale));
+  height: calc(28px * var(--scale));
+  vertical-align: middle;
+}
+
 .image-box {
   display: flex;
   justify-content: center;
