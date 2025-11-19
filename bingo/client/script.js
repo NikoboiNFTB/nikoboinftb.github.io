@@ -59,7 +59,7 @@ function resetBoard() {
 
     const freeSpace = document.getElementById('N3');
     if (freeSpace) {
-        freeSpace.innerHTML = '<img src="images/logo.svg" alt="logo" class="logo-img" />';
+        freeSpace.innerHTML = '<img src="../../assets/fin-square.svg" alt="logo" class="logo-img" />';
         freeSpace.classList.add('marked');
     }
 
