@@ -232,8 +232,7 @@ body {
     }
 
     .free-space img.logo-img {
-        max-width: 50px;
-        max-height: 50px;
+        border-radius: 12px;
     }
 
     #winMessage {
