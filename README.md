@@ -51,17 +51,18 @@ A simple, free and open-source Bingo game.
 
 ### Usage
 
-1. **Open Live Version:**  
+**Open Live Version:**  
    [https://nikoboi.dev/bingo](https://nikoboi.dev/bingo)  
-   Or Download & Run Locally (not recommended for play):  
-   Clone this repository, in terminal, run;  
-   ```git clone https://github.com/NikoboiNFTB/nikoboinftb.github.io```  
-   ```cd nikoboinftb.github.io```  
-   ```python3 -m http.server 8000```
+   Or Download & Run Locally (not recommended for play, as you wont have HTTPS):  
+   1. Clone this repository, in terminal, run;  
+   `git clone https://github.com/NikoboiNFTB/nikoboinftb.github.io`  
+   `cd nikoboinftb.github.io`  
+   2. Start a Python server;  
+      `python3 -m http.server 5500`  
    >> Requires Python  
-
-   ```firefox http://localhost:8000/bingo/index.html```  
-   Or open `http://<ip>:<port>/bingo/index.html` on any device in your LAN.
+   3. Visit the server;  
+   `firefox http://127.0.0.1:5500/bingo/index.html`  
+   Or open `http://<PC-ip>:5500/bingo/index.html` on any device in your LAN.
 
 ### Screenshot
 
