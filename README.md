@@ -68,7 +68,7 @@ A simple, free and open-source Bingo game.
 
 ![Screenshot of Bingo](assets/screenshot/bingo-2025-11-20.png)  
 ![Screenshot of Bingo Client](assets/screenshot/bingo-client-2025-11-20.png)  
-![Screenshot of Bingo Host](assets/screenshot/bingo-host-2025-11-20.png)
+![Screenshot of Bingo Host](assets/screenshot/bingo-host-2025-11-21.png)
 
 ---
 
