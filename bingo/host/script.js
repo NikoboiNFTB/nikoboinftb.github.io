@@ -19,18 +19,16 @@ function getRandomNumber(range) {
 }
 
 function generateBingoNumber() {
-    const totalNumbers = 75; // Total possible Bingo numbers
+    const totalNumbers = 75;
 
-    // Safeguard: stop if all numbers have been called
     if (calledNumbers.length >= totalNumbers) {
         alert('All numbers have been called!');
-        return; // Exit function
+        return;
     }
 
     const letters = Object.keys(ranges);
     let letter, num, full;
 
-    // Generate a number that hasn't been called yet
     do {
         letter = letters[Math.floor(Math.random() * letters.length)];
         num = getRandomNumber(ranges[letter]);
