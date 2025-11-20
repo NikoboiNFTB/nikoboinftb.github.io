@@ -43,6 +43,7 @@ h1 {
     margin-bottom: var(--gap);
     font-size: 2em;
     color: var(--text-color);
+    text-align: center;
 }
 
 .generator-container {
