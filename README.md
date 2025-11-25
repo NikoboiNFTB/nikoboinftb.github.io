@@ -8,7 +8,7 @@ This repository contains my website, which contains several lightweight, open-so
 
 | Tool | Description | Live Demo | Source |
 |------|------------|-----------|--------|
-| **Links** | Simple site for easy access to all of my socials | [links](https://nikoboi.dev/links) | [links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links) |
+| **Home** | Simple site for easy access to all of my socials | [root](https://nikoboi.dev/) | [root](https://github.com/NikoboiNFTB/nikoboinftb.github.io/) |
 | **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [bingo](https://nikoboi.dev/bingo) | [bingo](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/bingo)
 | **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [encrypt](https://nikoboi.dev/encrypt) | [encrypt](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
 | **Open Links** | Quickly open multiple URLs in new browser tabs. | [open-links](https://nikoboi.dev/open-links) | [open-links](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/open-links) |
@@ -16,7 +16,7 @@ This repository contains my website, which contains several lightweight, open-so
 
 ---
 
-## Links
+## Home
 
 A simple, free and open-source portal where all of my public social media accounts can be found. The code is also reusable, so others can create their own social portals based on this project (feel free to do so :D).
 
@@ -29,9 +29,9 @@ A simple, free and open-source portal where all of my public social media accoun
 ### Usage
 
 1. **Open Live Version:**  
-   [https://nikoboi.dev/links](https://nikoboi.dev/links)  
+   [https://nikoboi.dev/](https://nikoboi.dev/)  
    Or Download & Run/Edit Locally:  
-   The main HTML file is `/links/index.html`, and the main CSS file is `/links/style.css`.
+   The main HTML file is `index.html`, and the main CSS file is `style.css`.
 
 ### Screenshot
 
@@ -187,10 +187,6 @@ nikoboinftb.github.io/
 │   ├── script.js  
 │   └── style.css  
 │  
-├── links/  
-│   ├── index.html  
-│   └── style.css  
-│  
 ├── open-links/  
 │   ├── index.html  
 │   ├── script.js  
@@ -201,10 +197,10 @@ nikoboinftb.github.io/
 │   ├── script.js  
 │   └── style.css  
 │  
+├── CNAME  
 ├── LICENSE  
 ├── README.md  
 ├── index.html  
-├── script.js  
 └── style.css  
 
 ---
