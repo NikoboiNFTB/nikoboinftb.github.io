@@ -1,6 +1,6 @@
-# NikoboiNFTB Web Tools
+# Nikoboi Website
 
-This repository contains several lightweight, open-source web tools. All tools are fully client-side, easy to use, and open-source under the **GPLv3 License**.  
+This repository contains my website, which contains several lightweight, open-source web tools. All tools are fully client-side, easy to use, and open-source under the **GPLv3 License**.  
 
 ---
 
