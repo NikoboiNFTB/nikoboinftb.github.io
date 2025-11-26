@@ -1,12 +1,19 @@
 :root {
-  --gap: 12px;
-  --primary-color: #3366cc;
-  --secondary-color: #444;
-  --bg-color: #181818;
   --text-color: #ffffff;
-  --input-bg: #222;
-  --input-border: #444;
-  --link-hover: #002F6C; /* Finnish flag blue */
+  --text-color2: #aaaaaa;
+  --primary-color: #002F6C;
+  --body-bg-color: #000000;
+  --bg-color: #111111;
+  --input-bg-color: #222222;
+  --secondary-color: #333333;
+  --link-color: #8097B6;
+
+  --gap: 16px;
+  --border-radius: 16px;
+  --padding: 16px;
+  --font-size: 16px;
+  --border: 2px solid #333333;
+  --margin: 16px;
 }
 
 html, body {
@@ -17,7 +24,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: var(--body-bg-color);
   font-family: Arial, sans-serif;
   text-align: center;
   color: var(--text-color);
@@ -27,8 +34,8 @@ html, body {
   background-color: var(--bg-color);
   width: 90%;
   max-width: 1000px;
-  border-radius: 12px;
-  padding: 32px;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,29 +45,29 @@ html, body {
 
 .controls {
   width: 100%;
-  margin-bottom: var(--gap);
+  margin-bottom: var(--margin);
 }
 
 #input {
   width: 100%;
   height: 50vh;
   max-height: 300px;
-  padding: 12px;
-  background-color: var(--input-bg);
-  border: 1px solid var(--input-border);
-  border-radius: 8px;
+  padding: var(--padding);
+  background-color: var(--input-bg-color);
+  border: var(--input-border);
+  border-radius: var(--border-radius);
   color: var(--text-color);
-  font-size: 16px;
+  font-size: var(--font-size);
   font-family: monospace;
   line-height: 1.5;
   resize: vertical;
   box-sizing: border-box;
-  margin: 0 auto 16px;
+  margin: 0 auto var(--margin);
 }
 
 .hint {
-  color: #bbb;
-  font-size: 16px;
+  color: var(--text-color2);
+  font-size: var(--font-size);
 }
 
 .row {
@@ -69,36 +76,37 @@ html, body {
   flex-wrap: wrap;
   gap: var(--gap);
   justify-content: center;
-  margin-bottom: 16px;
+  margin: var(--margin);
 }
 
 button {
   flex: 1 1 200px;
   max-width: 250px;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: var(--padding);
+  border: var(--input-border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
   cursor: pointer;
-  color: #fff;
-  background-color: var(--link-hover);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: var(--text-color);
+  background-color: var(--input-bg-color);
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #004aad; /* Lighter Finnish blue hover */
-  transform: translateY(-2px);
+  background-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 #openBtn,
 #clearBtn {
-  background-color: var(--link-hover);
-  color: #fff;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 #openBtn:hover,
 #clearBtn:hover {
-  background-color: #004aad;
+  background-color: var(--primary-color);
 }
 
 .footer {
@@ -106,25 +114,18 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 16px;
+  padding: var(--padding);
   width: 100%;
 }
 
-.profile {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin-bottom: 8px;
-}
-
 .notice {
-  font-size: 16px;
-  color: #ccc;
+  font-size: var(--font-size);
+  color: var(--text-color2);
   text-align: center;
 }
 
 .notice a {
-  color: var(--primary-color);
+  color: var(--link-color);
   text-decoration: none;
   font-weight: bold;
 }
