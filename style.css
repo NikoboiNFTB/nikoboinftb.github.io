@@ -28,9 +28,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     min-height: calc(100vh - var(--padding) * 2);
     padding: var(--padding);
-    text-align: center;
     font-size: var(--font-size);
     box-sizing: border-box;
     margin: var(--margin);

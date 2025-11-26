@@ -1,8 +1,10 @@
 const textInput = document.querySelector(".input");
 const passwordInput = document.querySelector(".password");
 const outputEl = document.querySelector(".output");
+
 const encryptBtn = document.querySelector(".encrypt");
 const decryptBtn = document.querySelector(".decrypt");
+const copyBtn = document.querySelector(".copy-output");
 
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
@@ -32,6 +34,7 @@ async function deriveKeys(password, salt) {
     baseKey,
     512
   );
+
   const keyBytes = new Uint8Array(bits);
   const encKeyBytes = keyBytes.slice(0, 32);
   const macKeyBytes = keyBytes.slice(32);
@@ -72,6 +75,7 @@ async function encryptText(plaintext, password) {
     ...iv,
     ...new Uint8Array(ciphertext),
   ]);
+
   const mac = await crypto.subtle.sign("HMAC", hmacKey, dataToMac);
 
   const full = new Uint8Array([
@@ -96,6 +100,7 @@ async function decryptText(dataB64, password) {
     const { encryptionKey, hmacKey } = await deriveKeys(password, salt);
 
     const dataToMac = new Uint8Array([...salt, ...iv, ...ciphertext]);
+
     const valid = await crypto.subtle.verify(
       "HMAC",
       hmacKey,
@@ -120,10 +125,12 @@ encryptBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   const text = textInput.value.trim();
   const password = passwordInput.value;
+
   if (!text || !password) {
     outputEl.textContent = "Please enter text and password.";
     return;
   }
+
   outputEl.textContent = "Encrypting...";
   const result = await encryptText(text, password);
   outputEl.textContent = result;
@@ -133,11 +140,14 @@ decryptBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   const data = textInput.value.trim();
   const password = passwordInput.value;
+
   if (!data || !password) {
     outputEl.textContent = "Please enter ciphertext and password.";
     return;
   }
+
   outputEl.textContent = "Decrypting...";
+
   try {
     const result = await decryptText(data, password);
     outputEl.textContent = result;
@@ -146,11 +156,10 @@ decryptBtn.addEventListener("click", async (e) => {
   }
 });
 
-const copyBtn = document.querySelector(".copy-output");
-
 copyBtn.addEventListener("click", () => {
   const text = outputEl.textContent.trim();
   if (!text) return;
+
   navigator.clipboard.writeText(text)
     .then(() => {
       copyBtn.textContent = "Copied!";
@@ -160,3 +169,16 @@ copyBtn.addEventListener("click", () => {
       console.error("Copy failed:", err);
     });
 });
+
+const inputs = document.querySelectorAll('.input, .password, .password2');
+
+function adjustHeight(input) {
+  input.style.height = 'auto';
+  input.style.height = `${input.scrollHeight}px`;
+}
+
+inputs.forEach(input => {
+  input.addEventListener('input', () => adjustHeight(input));
+});
+
+inputs.forEach(input => adjustHeight(input));
