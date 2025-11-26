@@ -1,48 +1,55 @@
 :root {
-    --primary-color: #002F6C;
-    --bg-color: #181818;
-    --bg-box: #222222;
-    --accent-color: #ff7f00;
-    --text-color: #ffffff;
-    --link-bg: #222;
-    --link-hover: #002F6C;
-    --icon-filter: invert(1) brightness(2);
-    --font-size-base: 32px;
+    --scale: 1;
+    --font-size: 64px;
+    --button-size: 256px;
+    --buttons-per-row: 3;
     --gap: 8px;
-    --black: #000000;
-}
+    --mobile-gap: 4px;
+    --border-radius: 8px;
+    --mobile-border-radius: 4px;
+    --padding: 32px;
+    --mobile-padding: 8px;
+    --margin: 8px;
+    --mobile-margin: 0px;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --primary-color: #002F6C;
+    --text-color: #ffffff;
+    --link-color: #8097B6;
+    --body-bg-color: #000000;
+    --container-bg-color: #111111;
+    --box-bg-color: #222222;
+    --border: 2px solid #333333;
+    --mobile-border: 1px solid #333333;
+    --win-color: #406391;
+
+    --icon-filter: invert(1) brightness(2);
 }
 
 body {
-    background-color: #000000;
+    box-sizing: border-box;
+    background-color: var(--body-bg-color);
     color: var(--text-color);
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-size: var(--font-size-base);
+    min-height: calc(100vh - var(--padding) * 2);
     flex-direction: column;
-    padding: 16px;
+    padding: var(--padding);
 }
 
-.main-container {
-    background-color: var(--bg-color);
+.container {
+    background-color: var(--container-bg-color);
     width: 90%;
     max-width: 600px;
-    border-radius: 18px;
-    padding: 12px;
+    border-radius: calc(var(--border-radius) * 4);
+    padding: var(--padding);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border: 2px solid #333;
+    border: var(--border);
+    gap: var(--gap);
 }
 
 .bingo-container {
@@ -50,15 +57,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
 }
 
 .headers {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    margin-bottom: 12px;
-    border-radius: 18px;
-    gap: 12px;
+    margin: var(--margin);
+    margin-top: 0;
+    border-radius: var(--border-radius);
+    gap: var(--gap);
 }
 
 .headers .b-header,
@@ -66,7 +76,7 @@ body {
 .headers .n-header,
 .headers .g-header,
 .headers .o-header {
-    border: 2px solid #333;
+    border: var(--border);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,15 +84,15 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-weight: bold;
-    border-radius: 18px;
-    font-size: 64px;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
 }
 
 .bingo-board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 12px;
+    gap: var(--gap);
     width: 100%;
     aspect-ratio: 1;
     max-width: 100%;
@@ -92,33 +102,32 @@ body {
 }
 
 .bingo-board div {
-    border: 2px solid #333;
+    border: var(--border);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: calc(var(--font-size) * 0.75);
     user-select: none;
     box-sizing: border-box;
     padding: 0;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    background-color: #222222;
-    border-radius: 18px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: var(--box-bg-color);
+    border-radius: var(--border-radius);
 }
 
 .bingo-board div:hover {
-    background-color: #444;
-    transform: scale(1.1);
+    background-color: var(--primary-color);
+    transform: scale(1.05);
 }
 
 .bingo-board div.marked {
     background-color: var(--primary-color) !important;
-    color: #ffffff;
 }
 
 .bingo-board div.marked:hover {
     background-color: var(--primary-color);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .free-space {
@@ -133,45 +142,57 @@ body {
 .free-space img.logo-img {
     width: 100%;
     height: 100%;
-    border-radius: 18px;
+    border-radius: var(--border-radius);
     object-fit: cover;
 }
 
 .marked {
     background-color: var(--primary-color);
-    color: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: var(--margin);
+    margin-bottom: 0;
+    gap: var(--gap);
+}
+
+.button-container > * {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #resetBtn {
-    width: 60%;
+    width: 100%;
     display: flex;
-    padding: 16px;
-    background-color: var(--link-bg);
-    border: 2px solid #333;
-    border-radius: 18px;
+    padding: calc(var(--padding) / 2) var(--padding);
+    background-color: var(--box-bg-color);
+    border: var(--border);
+    border-radius: calc(var(--border-radius) * 4);
     color: var(--text-color);
-    font-size: 18px;
+    font-size: calc(var(--font-size) / 2);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 12px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     justify-content: center;
 }
 
 #resetBtn:hover {
-    background-color: var(--link-hover);
-    transform: translateY(-2px);
+    background-color: var(--primary-color);
+    transform: scale(1.05);
 }
 
 #winMessage {
-    width: 60%;
+    width: 100%;
     display: none;
-    margin-top: 12px;
-    padding: 16px;
-    background-color: #005ed8;
-    color: #000;
-    border: 2px solid #333;
-    border-radius: 18px;
-    font-size: 24px;
+    padding: calc(var(--padding) / 2) var(--padding);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: var(--border);
+    border-radius: calc(var(--border-radius) * 4);
+    font-size: calc(var(--font-size) / 2);
     font-weight: bold;
     animation: pop 0.5s ease-in-out forwards;
     text-align: center;
@@ -184,7 +205,7 @@ body {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1.05);
         opacity: 1;
     }
 
@@ -195,17 +216,26 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .main-container {
-        padding: 4px;
+    body {
+        padding: var(--mobile-padding);
+        margin: var(--mobile-margin);
+    }
+
+    .container {
+        padding: var(--mobile-padding);
         width: 100%;
         max-width: none;
-        border-radius: 4px;
-        border: 1px solid #333;
+        border-radius: var(--mobile-border-radius);
+        border: var(--mobile-border);
+    }
+
+    .bingo-container {
+        gap: var(--mobile-gap);
     }
 
     .headers {
-        gap: 4px;
-        margin-bottom: 4px;
+        gap: var(--mobile-gap);
+        margin: var(--mobile-margin);
     }
 
     .headers .b-header,
@@ -214,43 +244,49 @@ body {
     .headers .g-header,
     .headers .o-header {
         width: 100%;
-        font-size: 32px;
-        border-radius: 4px;
+        font-size: calc(var(--font-size) / 2);
+        border-radius: var(--mobile-border-radius);
         width: 100%;
         aspect-ratio: 1;
-        border: 1px solid #333;
+        border: var(--mobile-border);
     }
 
     .bingo-board {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        gap: 4px;
+        gap: var(--mobile-gap);
         width: 100%;
         aspect-ratio: 1;
     }
 
     .bingo-board div {
-        font-size: 24px;
-        border-radius: 4px;
-        border: 1px solid #333
+        font-size: calc(var(--font-size) / 3);
+        border-radius: var(--mobile-border-radius);
+        border: var(--mobile-border);
+    }
+    .button-container {
+        margin: var(--mobile-margin);
+        gap: var(--mobile-gap);
     }
 
     #resetBtn {
-        padding: 8px;
-        font-size: 16px;
-        margin-top: 4px;
-        border: 1px solid #333;
+        padding: var(--mobile-padding);
+        font-size: calc(var(--font-size) / 4);
+        margin: var(--mobile-margin);
+        border: var(--mobile-border);
+        border-radius: var(--mobile-border-radius);
     }
 
     .free-space img.logo-img {
-        border-radius: 4px;
+        border-radius: var(--mobile-border-radius);
     }
 
     #winMessage {
-        font-size: 16px;
-        border: 1px solid #333;
-        padding: 8px;
-        margin-top: 4px;
+        font-size: calc(var(--font-size) / 4);
+        border: var(--mobile-border);
+        padding: var(--mobile-padding);
+        margin: var(--mobile-margin);
+        border-radius: var(--mobile-border-radius);
     }
 }
