@@ -121,6 +121,7 @@ img.icon {
     }
 
     .container {
+        width: 100%;
         padding: calc(var(--padding) / 2);
     }
 
