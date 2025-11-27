@@ -35,7 +35,7 @@ A simple, free and open-source portal where all of my public social media accoun
 
 ### Screenshot
 
-![Screenshot of Root](assets/screenshot/root-2025-11-26-11-49-56.png)
+![Screenshot of Root](assets/screenshot/root-2025-11-27-12-06-39.png)
 
 ---
 
@@ -66,9 +66,9 @@ A simple, free and open-source Bingo game.
 
 ### Screenshots
 
-![Screenshot of Bingo](assets/screenshot/bingo-2025-11-26-11-50-44.png)  
-![Screenshot of Bingo Client](assets/screenshot/bingo-client-2025-11-26-11-51-12.png)  
-![Screenshot of Bingo Host](assets/screenshot/bingo-host-2025-11-26-11-51-41.png)
+![Screenshot of Bingo](assets/screenshot/bingo-2025-11-27-12-07-39.png)  
+![Screenshot of Bingo Client](assets/screenshot/bingo-client-2025-11-27-12-08-09.png)  
+![Screenshot of Bingo Host](assets/screenshot/bingo-host-2025-11-27-12-08-35.png)
 
 ---
 
@@ -94,7 +94,7 @@ or Download and Run locally (recommended)
   >> Requires Python  
 5. Then just open in your browser: [http://localhost:5500/encrypt/](http://localhost:5500/encrypt/)
 
-![Screenshot of Encrypt](assets/screenshot/encrypt-2025-11-20.png)
+![Screenshot of Encrypt](assets/screenshot/encrypt-2025-11-27-12-09-03.png)
 
 ---
 
