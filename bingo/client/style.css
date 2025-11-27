@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    background-color: var(--container-bg-color);
+    background: linear-gradient(135deg, #000000, #222222);
     width: 90%;
     max-width: 600px;
     border-radius: calc(var(--border-radius) * 4);
@@ -81,7 +81,7 @@ body {
     justify-content: center;
     align-items: center;
     aspect-ratio: 1;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     color: var(--text-color);
     font-weight: bold;
     border-radius: var(--border-radius);
@@ -111,22 +111,22 @@ body {
     box-sizing: border-box;
     padding: 0;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    background-color: var(--box-bg-color);
+    transition: transform 0.2s ease;
+    background: linear-gradient(135deg, #111111, #333333);
     border-radius: var(--border-radius);
 }
 
 .bingo-board div:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 
 .bingo-board div.marked {
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(135deg, #001836, #0046a2) !important;
 }
 
 .bingo-board div.marked:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .marked {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
 }
 
 .button-container {
@@ -169,18 +169,18 @@ body {
     width: 100%;
     display: flex;
     padding: calc(var(--padding) / 2) var(--padding);
-    background-color: var(--box-bg-color);
+    background: linear-gradient(135deg, #111111, #333333);
     border: var(--border);
     border-radius: calc(var(--border-radius) * 4);
     color: var(--text-color);
     font-size: calc(var(--font-size) / 2);
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
     justify-content: center;
 }
 
 #resetBtn:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 
@@ -188,7 +188,7 @@ body {
     width: 100%;
     display: none;
     padding: calc(var(--padding) / 2) var(--padding);
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     color: var(--text-color);
     border: var(--border);
     border-radius: calc(var(--border-radius) * 4);

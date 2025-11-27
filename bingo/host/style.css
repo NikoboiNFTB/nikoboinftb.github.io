@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    background-color: var(--container-bg-color);
+    background: linear-gradient(135deg, #000000, #222222);
     padding: calc(var(--padding) * 2);
     border-radius: var(--border-radius);
     display: flex;
@@ -96,7 +96,7 @@ h2.header {
 #generateBtn {
     display: inline-block;
     padding: var(--padding);
-    background-color: var(--box-bg-color);
+    background: linear-gradient(135deg, #111111, #333333);
     color: var(--text-color);
     font-weight: bold;
     width: 100%;
@@ -104,11 +104,11 @@ h2.header {
     border-radius: var(--border-radius);
     border: var(--border);
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 #generateBtn:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 
@@ -152,7 +152,7 @@ h2.header {
     display: inline-block;
     width: 100%;
     padding: var(--padding);
-    background-color: var(--box-bg-color);
+    background: linear-gradient(135deg, #111111, #333333);
     border: var(--border);
     border-radius: var(--border-radius);
     color: var(--text-color);
@@ -160,11 +160,11 @@ h2.header {
     font-weight: bold;
     cursor: pointer;
     margin: var(--margin);
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 #resetBtn:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 

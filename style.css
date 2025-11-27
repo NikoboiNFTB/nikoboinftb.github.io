@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    background-color: var(--container-bg-color);
+    background: linear-gradient(135deg, #000000, #222222);
     border-radius: var(--border-radius);
     padding: var(--padding);
     box-sizing: border-box;
@@ -77,17 +77,17 @@ h2.header {
     justify-content: flex-start;
     gap: var(--gap);
     padding: calc(var(--padding) * var(--scale) / 2) calc(var(--padding) * var(--scale) / 2);
-    background-color: var(--box-bg-color);
+    background: linear-gradient(135deg, #111111, #333333);
     color: var(--text-color);
     border: var(--border);
     border-radius: var(--border-radius);
     text-decoration: none;
     font-size: var(--font-size);
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .link-button:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #001836, #0046a2);
     transform: scale(1.05);
 }
 
