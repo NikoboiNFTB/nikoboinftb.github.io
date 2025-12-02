@@ -7,7 +7,7 @@
     --border-radius: 32px;
     --padding: 32px;
     --margin: 8px;
-    --img-size: 32px;
+    --img-size: 128px;
 
     --primary-color: #002F6C;
     --primary-dark-color: #001836;
@@ -96,14 +96,22 @@ s {
     cursor: pointer;
 }
 
-img.icon {
+img.img {
     width: var(--img-size);
     height: var(--img-size);
     filter: invert(1) brightness(2);
+    margin-top: calc(var(--margin) * 4);
 }
 
-img.icon#no-filter {
+img.img#no-filter {
     filter: none;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 
