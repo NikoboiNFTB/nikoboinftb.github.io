@@ -63,9 +63,19 @@
             <li>
                 <b>Use trusted sites</b>: Install scripts primarily from trusted sites like <a href="https://greasyfork.org/en" target="_blank">GreasyFork</a> or <a href="https://openuserjs.org/" target="_blank">OpenUserJS</a>, where reviews and ratings exist.
             </li>
+            <ul>
+                <li>
+                    <b>Note:</b> GitHub (or any other site) is fine, <i>if</i> you trust the author <i>or</i> take the following precautions. If you use untrusted sites, make sure to disable automatic updates in your userscript manager.
+                </li>
+            </ul>
             <li>
-                <b>Check permissions</b>: Look at the @match and @include lines in the script to ensure it only runs on the sites it needs to.
+                <b>Check permissions</b>: Look at the <code>@match</code> and <code>@include</code> lines in the script to ensure it only runs on the sites it needs to.
             </li>
+            <ul>
+                <li>
+                    <b>Note:</b> Violentmonkey makes this trivial. The extension lists notable permissions right below the description on the install page.
+                </li>
+            </ul>
             <li>
                 <b>Use the Script Analyzer</b>: Paste the script into the <a href="https://ilyaxuwu.github.io/tampermonkey/analyze.html" target="_blank">Tampermonkey Script Security Analyzer</a> (by <a href="https://ilyaxuwu.github.io/" target="_blank">Ilyax</a>) to spot risky behavior.
                 <ul>
@@ -75,7 +85,7 @@
                 </ul>
             </li>
             <li>
-                <b>Ask an AI</b>: Unless you can read code, your best bet is actually to ask an AI tool, like <a href="https://chatgpt.com/" target="_blank">ChatGPT</a> or Claude, to audit a script.
+                <b>Ask an AI</b>: Unless you can read code, your best bet is actually to ask an LLM, like <a href="https://chatgpt.com/" target="_blank">ChatGPT</a> or Claude, to audit a script.
             </li>
         </ul>
         <p>
