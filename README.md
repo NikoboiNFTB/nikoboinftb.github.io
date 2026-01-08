@@ -135,6 +135,7 @@ https://www.youtube.com/@NikoboiNFTB
 
 ## Repository Structure
 
+```
 .  
 ├── assets  
 │   ├── clippy.png  
@@ -200,7 +201,7 @@ https://www.youtube.com/@NikoboiNFTB
 ├── sitemap.xml  
 │  
 └── style.css  
-
+```
 
 
 ---
