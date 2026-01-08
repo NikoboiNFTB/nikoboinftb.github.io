@@ -135,37 +135,65 @@ https://www.youtube.com/@NikoboiNFTB
 
 ## Repository Structure
 
-nikoboinftb.github.io/  
-│  
-├── assets/  
-│   ├── screenshot/  
-│   ├── svg/  
-│   └── clippy.png  
-│  
-├── bingo/  
-│   ├── client/  
-│   │   ├── index.html  
-│   │   ├── script.js  
-│   │   └── style.css  
-│   ├── host/  
-│   │   ├── index.html  
-│   │   ├── script.js  
-│   │   └── style.css  
-│   ├── index.html  
-│   └── style.css  
-│  
-├── encrypt/  
-│   ├── index.html  
-│   ├── script.js  
-│   └── style.css  
-│  
-├── links/  
-│   ├── index.html  
-│   ├── script.js  
-│   └── style.css  
-│  
+.  
+├── assets  
+│   ├── after-eight.svg  
+│   ├── clippy.png  
+│   ├── fin-circle-gradient.svg  
+│   ├── fin-circle.svg  
+│   ├── fin-square-gradient.svg  
+│   ├── fin-square.svg  
+│   ├── screenshot  
+│   │   ├── example.png  
+│   │   └── example.png  
+│   └── svg  
+│       ├── brand  
+│       │   ├── example.svg  
+│       │   └── example.svg  
+│       └── regular  
+│           ├── example.svg  
+│           └── example.svg  
+├── bingo  
+│   ├── client  
+│   │   ├── index.html  
+│   │   ├── script.js  
+│   │   └── style.css  
+│   ├── host  
+│   │   ├── index.html  
+│   │   ├── script.js  
+│   │   └── style.css  
+│   ├── index.html  
+│   └── style.css  
+├── CNAME  
+├── encrypt  
+│   ├── index.html  
+│   ├── README.md  
+│   ├── script.js  
+│   ├── style.css  
+│   └── test.js  
 ├── index.html  
+├── js  
+│   └── safety  
+│       ├── index.html  
+│       └── style.css  
+├── LICENSE  
+├── links  
+│   ├── index.html  
+│   ├── script.js  
+│   └── style.css  
+├── player  
+│   ├── index.html  
+│   ├── script.js  
+│   └── style.css  
+├── README.md  
+├── robots.txt  
+├── sh  
+│   ├── example  
+│   └── example  
+├── sitemap.xml  
 └── style.css  
+
+
 
 ---
 
