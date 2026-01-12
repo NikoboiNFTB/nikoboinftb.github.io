@@ -215,7 +215,6 @@ https://www.youtube.com/@NikoboiNFTB
 ├── CNAME
 ├── index.html
 ├── LICENSE
-├── list.txt
 ├── README.md
 ├── robots.txt
 ├── sitemap.xml
