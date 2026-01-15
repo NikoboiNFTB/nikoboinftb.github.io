@@ -110,7 +110,11 @@ img.icon {
     filter: invert(1) brightness(2);
 }
 
-img.icon#no-filter {
+img.round {
+    border-radius: calc(var(--img-size) * 0.5);
+}
+
+img.no-filter {
     filter: none;
 }
 
