@@ -1,55 +1,40 @@
-# Bitwarden-Style Text Encryptor
 
-A simple, browser-based text encryption tool using AES256-CBC-HMAC-SHA256 encryption. Encrypt and decrypt text locally with one or two passwords, fully in the browser.  
 
-## Features
+## Text Encryption Tool
 
-- AES256-CBC encryption with HMAC-SHA256 for integrity  
-- Optional secondary password for nested encryption  
-  - Doesn't really do much, a secure password is much more important.
-- Dark-themed, centered UI.  
-- Fully responsive design.  
-- No server-side storage, all encryption happens **locally**.  
-- Included test runner, to make sure it's working. If encryption or decrytion fail, see your browser console.  
+A lightweight, free, and open-source web tool to encrypt and decrypt text quickly. Perfect for small messages or learning about simple encryption techniques. The code is reusable, so you can modify or integrate it into your own projects.
 
-## Installation
+### Features
 
-1. Clone the repository:  
-   `git clone https://github.com/NikoboiNFTB/nikoboinftb.github.io`  
+- Encrypt and decrypt text in the browser.
+- Simple, intuitive interface.
+- Fully open-source and easily forkable for personal use.
 
-2. Open `/encrypt/index.html` in a (modern) browser.  
+### Usage
 
-No additional dependencies or JavaScript frameworks required.  
+**Option 1**. Open Live Version:
 
-## Usage
+[https://nikoboi.dev/encrypt/](https://nikoboi.dev/encrypt/)
 
-1. Enter the text you want to encrypt in the first input box.  
-2. Enter your primary password in the password field.  
-3. (Optional) Enter a secondary password in the second password field.  
-4. Click "Encrypt" to generate the encrypted text.  
-5. Click "Decrypt" to revert encrypted text back to plain text.  
+**Option 2**. Download and Run locally (recommended):
 
-## File Structure
+1. Create a folder anywhere, open the terminal in it and run:
 
-- index.html – Main HTML page  
-- style.css – Stylesheet for the UI  
-- script.js – Encryption/decryption logic  
-- test.js – Test runner for verifying encryption with various scenarios  
+```bash
+git clone https://github.com/NikoboiNFTB/nikoboinftb.github.io
+cd nikoboinftb.github.io
+```
 
-## Encryption Details
+2. Start a Python server (this is local):
+```bash
+python3 -m http.server 5500
+```
 
-- Based on Bitwarden's AES256-CBC-HMAC-SHA256 protocol  
-- Encrypts text locally; no data is sent to any server  
-  - Recommended: Download and use locally.  
-- Secondary password provides an additional layer of encryption if desired  
+>> Requires Python
 
-## Security Notes
+3. Then just open in your browser: [http://localhost:5500/encrypt/](http://localhost:5500/encrypt/)
+```bash
+firefox http://localhost:5500/encrypt/
+```
 
-- All encryption is performed locally; ensure your browser and machine are secure.  
-- Use strong, unique passwords for optimal security.  
-- Secondary password is optional but recommended for added protection.  
-- Keep in mind that the weakest link is always a weak password or social engineering.
-
-## License
-
-[GPLv3](../LICENSE)
+![Screenshot of Encrypt](assets/screenshot/encrypt-2025-11-27-12-09-03.png)
