@@ -9,9 +9,9 @@ This repository contains my website, which contains several lightweight, open-so
 | Site | Description | Live | README & Source |
 | - | - | - | - |
 | **Home** | Simple link portal | [Home](https://nikoboi.dev/) | [README](#nikoboidev) |
-| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/bingo/README.md) |
-| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/encrypt/README.md) |
-| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/links/README.md) |
+| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](bingo/README.md) |
+| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](encrypt/README.md) |
+| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](links/README.md) |
 | **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/js/safety) | N/A |
 
 ## Home
