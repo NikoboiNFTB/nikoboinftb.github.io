@@ -9,10 +9,10 @@ This repository contains my website, which contains several lightweight, open-so
 | Site | Description | Live | README & Source |
 | - | - | - | - |
 | **Home** | Simple site for easy access to all of my projects and socials | [Home](https://nikoboi.dev/) | [README](#nikoboidev) |
-| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/bingo) |
-| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt) |
-| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links) |
-| **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/safety) | [safety](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/safety) |
+| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/bingo#bingo) |
+| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt#text-encryption-tool) |
+| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links#open-links) |
+| **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/safety) | [Guide]() |
 
 ## Home
 
