@@ -8,15 +8,15 @@ This repository contains my website, which contains several lightweight, open-so
 
 | Site | Description | Live | README & Source |
 | - | - | - | - |
-| **Home** | Simple site for easy access to all of my projects and socials | [Home](https://nikoboi.dev/) | [README](#nikoboidev) |
-| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/bingo#bingo) |
-| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/encrypt#text-encryption-tool) |
-| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/links#open-links) |
-| **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/safety) | [Guide]() |
+| **Home** | Simple link portal | [Home](https://nikoboi.dev/) | [README](#nikoboidev) |
+| **Bingo** | Very simple, clean and Open-Source Bingo host and client. | [Bingo](https://nikoboi.dev/bingo) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/bingo/README.md) |
+| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/encrypt/README.md) |
+| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](https://github.com/NikoboiNFTB/nikoboinftb.github.io/blob/main/links/README.md) |
+| **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/js/safety) | N/A |
 
 ## Home
 
-A simple, free and open-source portal where all of my public social media accounts can be found. The code is easily tweakable, so others can create their own social portals based on this project (feel free to do so :D). Most socials have icons in [`/assets/svg/brand/`](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/assets/svg/brand).
+A simple, free and open-source portal where all of my projects and social media accounts can be found. The code is easily tweakable, so others can create their own social portals based on this project (feel free to do so :D). Most socials have icons in [`/assets/svg/brand/`](https://github.com/NikoboiNFTB/nikoboinftb.github.io/tree/main/assets/svg/brand).
 
 ### Features
 
