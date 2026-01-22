@@ -1,3 +1,5 @@
+⚠️ This repository is undergoing large changes. README.md files may not be accurate.
+
 # Open Links
 
 A lightweight tool for opening multiple URLs at once in new tabs. Useful for bulk opening tabs. A great extra tool to use with [Link Gopher](https://addons.mozilla.org/en-US/firefox/addon/link-gopher/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) (just as they likely intended "... or copy and paste into other systems").

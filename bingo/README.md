@@ -1,3 +1,5 @@
+⚠️ This repository is undergoing large changes. README.md files may not be accurate.
+
 # Bingo
 
 A simple, free and open-source Bingo game.
