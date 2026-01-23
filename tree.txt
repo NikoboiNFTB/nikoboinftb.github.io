@@ -879,6 +879,10 @@
 │   │       ├── window-restore.svg
 │   │       └── xmark-circle.svg
 │   └── clippy.png
+├── automation
+│   ├── pull
+│   ├── push
+│   └── status
 ├── bingo
 │   ├── host
 │   │   ├── index.html
@@ -925,9 +929,12 @@
 │   │   ├── bulk
 │   │   │   ├── all-pull
 │   │   │   ├── all-push
-│   │   │   └── all-status
+│   │   │   ├── all-status
+│   │   │   ├── ignore
+│   │   │   └── ignore-reset
 │   │   ├── clone
 │   │   │   ├── clone-author
+│   │   │   ├── clone-author-turbo
 │   │   │   └── clone-repo
 │   │   ├── repo
 │   │   │   ├── pull
@@ -935,17 +942,18 @@
 │   │   │   └── status
 │   │   ├── setup
 │   │   │   ├── automation
+│   │   │   ├── ssh
 │   │   │   └── workflow
 │   │   └── ssh
 │   │       ├── disable-ssh
-│   │       ├── enable-ssh
-│   │       └── setup-ssh
+│   │       └── enable-ssh
 │   └── utils
 │       ├── compare
-│       ├── sort-file
-│       └── test123.txt
+│       ├── sort
+│       └── SORTME.txt
 ├── CNAME
 ├── favicon.ico
+├── favicon.png
 ├── index.html
 ├── LICENSE
 ├── README.md
@@ -955,4 +963,4 @@
 ├── todo.txt
 └── tree.txt
 
-47 directories, 909 files
+48 directories, 916 files

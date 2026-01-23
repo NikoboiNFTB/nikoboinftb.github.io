@@ -123,6 +123,7 @@ A simple, free and open-source portal where all of my projects and social media 
 │
 ├── CNAME
 ├── favicon.ico
+├── favicon.png
 ├── index.html
 ├── LICENSE
 ├── README.md
