@@ -2,6 +2,12 @@
 
 set -e
 
+# Ensure $HOME exists
+if [ -z "$HOME" ]; then
+    echo "HOME variable not set!";
+    exit 1;
+fi
+
 # Definitions
 AUTHOR="NikoboiNFTB"
 ROOT_DIR="$HOME/GitHub"
@@ -22,47 +28,52 @@ if [ -z "$repos" ]; then
     echo "No repositories found or failed to fetch from GitHub."
     exit 1
 fi
-echo "Found $(echo "$repos" | wc -w) repositories. Cloning/pulling all in parallel..."
+echo
+echo "Found $(echo "$repos" | wc -w) repositories. Cloning/pulling all..."
+echo
 
 # Clone
 for repo in $repos; do
     (
         if [ -d "$repo/.git" ]; then
             echo "Updating $repo..."
-            cd "$repo" && git pull --quiet
+            cd "$repo" && git pull --quiet || echo "Pulling $repo failed"
         else
             echo "Cloning $repo..."
-            git clone --quiet "git@github.com:$AUTHOR/$repo.git"
+            git clone --quiet "git@github.com:$AUTHOR/$repo.git" || echo "Cloning $repo failed"
         fi
     ) &
 done
 
 wait
 
+echo
 echo "All clone/update tasks completed!"
+echo
 
 # Copy all files to correct directories
 echo "Copying files..."
 
-for file in GitHub-Tools/shell/git/bulk/*; do
+for file in $AUTHOR_DIR/GitHub-Tools/shell/git/bulk/*; do
     cp "$file" "$AUTHOR_DIR/"
 done
-for file in GitHub-Tools/shell/git/clone/*; do
+for file in $AUTHOR_DIR/GitHub-Tools/shell/git/clone/*; do
     cp "$file" "$ROOT_DIR/"
 done
-for file in GitHub-Tools/shell/git/repo/*; do
+for file in $AUTHOR_DIR/GitHub-Tools/shell/git/repo/*; do
     cp "$file" "$AUTHOR_DIR/"
 done
-for file in GitHub-Tools/shell/git/ssh/*; do
+for file in $AUTHOR_DIR/GitHub-Tools/shell/git/ssh/*; do
     cp "$file" "$AUTHOR_DIR/"
 done
 
-# Ensure only copied files get executable permissions
+# Give executable permissions
 chmod +x "$AUTHOR_DIR"/* "$ROOT_DIR"/*
 
 echo "Files copied!"
 
 # Prompt to hide SSH scripts (y/N)
+echo
 read -p "Hide SSH scripts? (y/N): " hide_ssh
 
 if [[ "$hide_ssh" =~ ^[yY]$ ]]; then
@@ -74,4 +85,55 @@ else
     # Remove hidden scripts if they exist
     rm -f "$AUTHOR_DIR/.disable-ssh" "$AUTHOR_DIR/.enable-ssh"
     echo "SSH scripts not hidden."
+fi
+
+# Reset */.git/info/exclude
+# bash $AUTHOR_DIR/ignore-reset
+
+# Add automation/ to */.git/info/exclude
+FILES=(automation automation/ automation/pull automation/push automation/status)
+added=false
+
+for FILE_NAME in "${FILES[@]}"; do
+    for f in */.git/info/exclude; do
+        if ! grep -qxF "$FILE_NAME" "$f"; then
+            echo "$FILE_NAME" >> "$f"
+            added=true
+        fi
+    done
+done
+
+# Add automation/ to repos
+mkdir -p automation
+cp pull push status automation/ || echo "Failed to copy scripts into automation/"
+
+for d in */; do
+    if [ "$d" != "automation/" ]; then
+        cp -r automation "$d" || echo "Failed to copy automation to $d"
+    fi
+done
+
+rm -rf automation || echo "Failed to remove temporary automation folder"
+
+
+
+
+
+
+
+
+# Hang
+
+KEEP_OPEN=true
+
+if [ "$KEEP_OPEN" = true ]; then
+    echo
+    read -p "Press 'Enter' to exit / Type 'disable' to disable hanging: " response
+    if [ "$response" = "disable" ]; then
+        sed -i 's/^KEEP_OPEN=true/KEEP_OPEN=false/' "$0"
+        echo
+        echo "KEEP_OPEN set to false"
+        echo "Change 'KEEP_OPEN=true' to enable"
+        sleep 4
+    fi
 fi
