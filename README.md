@@ -6,38 +6,17 @@ This repository contains my website, which contains several lightweight, open-so
 
 ## Overview of Tools
 
-| Site | Description | Live | README & Source |
+| Site | Description | README | Source |
 | - | - | - | - |
-| [**Home**](https://nikoboi.dev/) | Simple link portal | Home | [README](#home) |
-| **[Bingo](https://nikoboi.dev/bingo)** | Very simple, clean and Open-Source Bingo host and client. | Bingo | [README](bingo/README.md) |
-| **Encryptor** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [Encrypt](https://nikoboi.dev/encrypt) | [README](encrypt/README.md) |
-| **Open Links** | Quickly open multiple URLs in new browser tabs. | [Open Links](https://nikoboi.dev/links) | [README](links/README.md) |
-| **Userscript Safety Guide** | A simple tutorial to guide you in safe installation and use of userscripts. | [Safety](https://nikoboi.dev/js/safety) | [Source](js/safety) |
-
-## Home
-
-A simple, free and open-source portal where all of my projects and social media accounts can be found. The code is easily tweakable, so others can create their own social portals based on this project (feel free to do so :D). Most socials have icons in [`/assets/svg/brand/`](assets/svg/brand).
-
-### Features
-
-- Centralized hub for all social media links.
-- Clean, minimal interface.
-- Fully open-source and easily forkable for personal use.
-
-### Usage
-
-**Open Live Version**:
-- [https://nikoboi.dev/](https://nikoboi.dev/)
-- Or Download & Run/Edit Locally:
-  - The main HTML file is `index.html`, and the main CSS file is `style.css`.
-
-### Screenshot
-
-![Screenshot of Home](/assets/screenshot/2026/01/21/home.png)
+| **[Home](https://nikoboi.dev/)** | Simple link portal | [HOME.md](/docs/HOME.md) | [home.html](/index.html) |
+| **[Bingo](https://nikoboi.dev/bingo/)** | Very simple, clean and Open-Source Bingo host and client. | [BINGO.md](/docs/BINGO.md) | [bingo.html](/bingo/index.html) |
+| **[Encryptor](https://nikoboi.dev/encrypt/)** | Easily encrypt and decrypt your messages, because fuck Chat Control. | [ENCRYPT.md](/docs/ENCRYPT.md) | [encrypt.html](/encrypt/index.html) |
+| **[Open Links](https://nikoboi.dev/links/)** | Quickly open multiple URLs in new browser tabs. | [LINKS.md](/docs/LINKS.md) | [links.html](/links/index.html) |
+| **[Userscript Safety Guide](https://nikoboi.dev/js/safety/)** | A simple tutorial to guide you in safe installation and use of userscripts. | N/A | [safety.html](/js/safety/index.html) |
 
 ## Repository Structure
 
->> Not a **full** tree. Only relevant bits, and examples where relevant. See [tree](/tree.txt) for every file.
+>> Not a *full* tree. Only relevant bits, and examples where relevant. See [tree.txt](/tree.txt) for every file.
 
 ```text
 .
