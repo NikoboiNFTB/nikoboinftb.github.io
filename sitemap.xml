@@ -7,17 +7,17 @@
   </url>
 
   <url>
-    <loc>https://nikoboi.dev/a/deslop/</loc>
+    <loc>https://nikoboi.dev/deslop/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nikoboi.dev/a/discord/</loc>
+    <loc>https://nikoboi.dev/discord/</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nikoboi.dev/a/github/</loc>
+    <loc>https://nikoboi.dev/github/</loc>
     <priority>0.8</priority>
   </url>
 
@@ -28,12 +28,17 @@
 
   <url>
     <loc>https://nikoboi.dev/bingo/</loc>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://nikoboi.dev/encrypt/</loc>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nikoboi.dev/assets/</loc>
+    <priority>0.0</priority>
   </url>
 
 </urlset>
