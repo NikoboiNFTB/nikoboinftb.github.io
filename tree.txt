@@ -1,11 +1,4 @@
 .
-├── a
-│   ├── deslop
-│   │   └── index.html
-│   ├── discord
-│   │   └── index.html
-│   └── github
-│       └── index.html
 ├── assets
 │   ├── favicon
 │   │   ├── after_eight_fyrkant.svg
@@ -329,6 +322,7 @@
 │   │   │   ├── less.svg
 │   │   │   ├── letterboxd-square.svg
 │   │   │   ├── letterboxd.svg
+│   │   │   ├── LICENSE
 │   │   │   ├── line.svg
 │   │   │   ├── linkedin-in.svg
 │   │   │   ├── linkedin-square.svg
@@ -813,6 +807,7 @@
 │   │       ├── laugh.svg
 │   │       ├── laugh-wink.svg
 │   │       ├── lemon.svg
+│   │       ├── LICENSE
 │   │       ├── life-ring.svg
 │   │       ├── lightbulb.svg
 │   │       ├── list-alt.svg
@@ -900,14 +895,23 @@
 │   │   ├── script.js
 │   │   └── style.css
 │   ├── index.html
-│   ├── README.md
 │   └── style.css
+├── deslop
+│   └── index.html
+├── discord
+│   └── index.html
+├── docs
+│   ├── BINGO.md
+│   ├── ENCRYPT.md
+│   ├── HOME.md
+│   └── LINKS.md
 ├── encrypt
 │   ├── index.html
-│   ├── README.md
 │   ├── script.js
 │   ├── style.css
 │   └── test.js
+├── github
+│   └── index.html
 ├── js
 │   └── safety
 │       ├── rev1
@@ -923,15 +927,13 @@
 │       └── style.css
 ├── links
 │   ├── index.html
-│   ├── README.md
 │   ├── script.js
 │   └── style.css
 ├── player
 │   ├── index.html
-│   ├── README.md
 │   ├── script.js
 │   └── style.css
-├── sh
+├── shell
 │   ├── git
 │   │   ├── bulk
 │   │   │   ├── all-pull
@@ -941,19 +943,22 @@
 │   │   │   └── ignore-reset
 │   │   ├── clone
 │   │   │   ├── clone-author
-│   │   │   ├── clone-author-turbo
 │   │   │   └── clone-repo
+│   │   ├── mass
+│   │   │   └── mass-pull
 │   │   ├── repo
 │   │   │   ├── pull
 │   │   │   ├── push
 │   │   │   └── status
 │   │   ├── setup
 │   │   │   ├── automation
-│   │   │   ├── ssh
+│   │   │   ├── git
 │   │   │   └── workflow
 │   │   └── ssh
 │   │       ├── disable-ssh
 │   │       └── enable-ssh
+│   ├── gp8
+│   │   └── install
 │   └── utils
 │       ├── compare
 │       ├── sort
@@ -967,7 +972,6 @@
 ├── robots.txt
 ├── sitemap.xml
 ├── style.css
-├── todo.txt
 └── tree.txt
 
-52 directories, 919 files
+54 directories, 921 files

@@ -26,10 +26,10 @@ This repository contains my website, which contains several lightweight, open-so
 │   │   └── *.svg
 │   │
 │   ├── screenshot
-│   │   ├── 2025
-│   │   │   └── *.png
-│   │   └── 2026
-│   │       └── *.svg
+│   │   └── YYYY
+│   │       └── MM
+│   │           └── DD
+│   │               └── *.png
 │   │
 │   ├── svg
 │   │   ├── brand
