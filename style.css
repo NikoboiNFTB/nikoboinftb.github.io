@@ -114,6 +114,10 @@ img.round {
     border-radius: calc(var(--img-size) * 0.5);
 }
 
+img.rounded {
+    border-radius: calc(var(--img-size) * 0.25);
+}
+
 img.no-filter {
     filter: none;
 }
