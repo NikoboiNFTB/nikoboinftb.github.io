@@ -98,6 +98,24 @@ a {
     margin: var(--margin);
 }
 
+button {
+    display: flex;
+    padding: calc(var(--padding) / 2) var(--padding);
+    background: linear-gradient(135deg, #111111, #333333);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #001836, #0046a2);
+    transform: scale(1.05);
+}
+
 img.img {
     width: var(--img-size);
     height: var(--img-size);
