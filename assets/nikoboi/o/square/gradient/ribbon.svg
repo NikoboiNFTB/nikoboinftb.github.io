@@ -8,9 +8,12 @@
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#808080"/>
     </radialGradient>
+    <mask id="oMask">
+      <rect width="400" height="400" fill="black"/>
+      <circle cx="200" cy="200" r="140" fill="white"/>
+      <circle cx="200" cy="200" r="80" fill="black"/>
+    </mask>
   </defs>
   <rect width="400" height="400" fill="url(#bgGradient)"/>
-  <rect x="100" y="60" width="60" height="280" fill="url(#nGradient)"/>
-  <rect x="240" y="60" width="60" height="280" fill="url(#nGradient)"/>
-  <polygon points="100,60 160,60 300,340 240,340" fill="url(#nGradient)"/>
+  <rect width="400" height="400" fill="url(#nGradient)" mask="url(#oMask)"/>
 </svg>
